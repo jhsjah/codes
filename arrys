@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="one">
+        <h1>Like Ice Cream</h1>
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+      <div class="two">
+        <h1>Like Ice Cream</h1>
+        <ul></ul>
+      </div>
+    </div>
+
+    <script>
+      // let inputArray = [
+      //   { name: "Amber", batch: "Batch 12", likesIceCream: false },
+      //   { name: "Pratik", batch: "Batch 12", likesIceCream: true },
+      //   { name: "Charan", batch: "Batch 11", likesIceCream: false },
+      //   { name: "Dhanashree", batch: "Batch 11", likesIceCream: true },
+      //   { name: "Anirban", batch: "Batch 10", likesIceCream: false },
+      // ];
+
+      // let arr = inputArray.filter(function (value) {
+      //   if (value.likesIceCream == true && value.batch == "Batch 11") {
+      //     return true;
+      //   } else {
+      //     return false;
+      //   }
+      // });
+
+      // let names = [];
+      // arr.forEach(function (value) {
+      //   names.push(value.name);
+      // });
+
+      // console.log(names);
+
+      // let arr2=arr.filter(function (value) {
+      //   if (value.batch=="Batch 11") {
+      //     return true
+      //   }
+      //   else{
+      //     return false
+      //   }
+      // })
+
+      // class Solution {
+      //   convertFive(num) {
+      //     var no = num;
+      //     var arr = Array.from(String(no), Number);
+      //     var arrnew = arr.map(function (value) {
+      //       if (value == 0) {
+      //         return value + 5;
+      //       } else {
+      //         return value;
+      //       }
+      //       var finalno = arrnew.join(",");
+      //       return finalno;
+      //     });
+      //   }
+      // }
+
+      
+      
+    </script>
+  </body>
+</html>
