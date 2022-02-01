@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let bankBalances = [30000, 1000, 50000, 20000, 40000];
+      // bankBalances = bankBalances.map(function (money) {
+      //   let moneyarr = money.toString().split("");
+      //   if (moneyarr[0] % 2 == 0) {
+      //     return (money = money + (20 * money) / 100);
+      //   } else {
+      //     return (money = money + (35 * money) / 100);
+      //   }
+      // });
+
+      // console.log(bankBalances);
+
+      //   let valuearr = bankBalances[0].toString().split("");
+      //   console.log(valuearr[0] % 2 == 0);
+
+      //         let arr = [2000, 5000, 4000, 8000, 4500];
+
+      // // arr = arr.map(function (value) {
+      // //   value = value + 1000;
+      // //   return value;
+      // // });
+
+      // Missing no problem
+      // let arr = [1, 3, 4, 2];
+
+      // let sortarr = arr.sort((a, b) => a - b);
+      // sortarr.forEach(function (value, index) {
+      //   if (value !== index) {
+      //     console.log(value - 1);
+      //   }
+      // });
+
+      // let sortarr = arr.sort((a, b) => a - b);
+      // sortarr.unshift(0);
+      // sortarr.forEach(function (value, index) {
+      //   if (value !== index) {
+      //     console.log(value - 1);
+      //   }
+      // });
+
+      // arrey palindrom pronlem
+      // function PalinArray(arr) {
+      //   var arr2 = [];
+      //   var store = arr;
+      //   arr.forEach(function (value, index) {
+      //     let num = value;
+      //     let numarr = value.toString().split("");
+      //     if (value == numarr.reverse().join("")) {
+      //       arr2.push(value);
+      //     }
+      //   });
+      //   if (arr2.length == store.length) {
+      //     console.log(1);
+      //   }
+      //   if (arr2.length!==store.length) {
+      //     console.log(0);
+      //   }
+      // }
+
+      // PalinArray([111, 2222, 5556]);
+
+      // let students = [
+      //   {
+      //     name: "John",
+      //     batch: "Batch 11",
+      //     marks: {
+      //       english: "38",
+      //       maths: "72",
+      //       science: "82",
+      //       hindi: "21",
+      //       social: "48",
+      //     },
+      //   },
+      //   {
+      //     name: "Sita",
+      //     batch: "Batch 12",
+      //     marks: {
+      //       english: "74",
+      //       maths: "82",
+      //       science: "32",
+      //       hindi: "42",
+      //       social: "28",
+      //     },
+      //   },
+      //   {
+      //     name: "Shyam",
+      //     batch: "Batch 13",
+      //     marks: {
+      //       english: "28",
+      //       maths: "92",
+      //       science: "63",
+      //       hindi: "81",
+      //       social: "61",
+      //     },
+      //   },
+      // ];
+
+      let students = [
+        {
+          name: "John",
+          batch: "Batch 11",
+          marks: {
+            english: "38",
+            maths: "72",
+            science: "82",
+            hindi: "21",
+            social: "48",
+          },
+        },
+        {
+          name: "Sita",
+          batch: "Batch 12",
+          marks: {
+            english: "74",
+            maths: "82",
+            science: "32",
+            hindi: "42",
+            social: "28",
+          },
+        },
+        {
+          name: "Shyam",
+          batch: "Batch 13",
+          marks: {
+            english: "28",
+            maths: "92",
+            science: "63",
+            hindi: "81",
+            social: "61",
+          },
+        },
+        {
+          name: "Lakshman",
+          batch: "Batch 14",
+          marks: {
+            english: "48",
+            maths: "83",
+            science: "63",
+            hindi: "71",
+            social: "63",
+          },
+        },
+      ];
+
+
+      let studentsTotalMarks = students.map((student) => {
+      let marks = Object.values(student.marks)
+      return marks.reduce((total, singleMarks) => {
+        return total + Number (singleMarks)
+      }, 0)
+    })
+
+    console.log(studentsTotalMarks)
+
+      // let studentsTotalMarks = students.map((student) => {
+      //   let { english, maths, science, hindi, social } = student.marks;
+        
+      //   return (
+      //     Number(english) +
+      //     Number(maths) +
+      //     Number(science) +
+      //     Number(hindi) +
+      //     Number(social)
+      //   );
+      // });
+
+      // console.log(studentsTotalMarks);
+
+
+
+      // / console.log("2" + 1);
+
+      // function product(arr) {
+      //   let product2 = 0;
+      //   arr.forEach((value) => {
+      //     product2*= value;
+      //   });
+      //   return product2
+      // }
+
+      // var arr = [1, 2, 3, 4];
+
+      // let sum=arr.reduce((total,element)=>{
+      //   return total*element
+      // })
+      // console.log(sum)
+
+      // console.log(product(arr));
+
+      // function findExtra(a, b, n) {
+      //   let num = a.filter(function (value, index) {
+      //     if (value !== b[index]) {
+      //       return true;
+      //     }
+      //   });
+      //   let num2 = num[0];
+      //   console.log(a.indexOf(num2));
+      // }
+
+      // var n = 8;
+      // var a = [2, 4, 6, 8, 9, 10, 12];
+      // var b = [2, 4, 6, 8, 10, 12];
+      // findExtra(a, b, n);
+
+      // function removeDups(str) {
+      //   let arr = str.split('')
+      //   let arr2=arr.filter(function(value,index){
+      //     if ( arr.indexOf(value)==index) {
+      //       return true
+      //     }
+      //     else{
+      //       return false
+      //     }
+
+      //   })
+      //   let outputstr=arr2.join('')
+      //   // console.log(outputstr)
+      //   // return arr2.joiu
+      //   //code here
+      // }
+
+      // removeDups("pptrar");
+
+      // function find_multiplication(a, b) {
+      //   let arr1 = a.sort((a, b) => a - b);
+      //   console.log(arr1)
+      //   let arr2 = b.sort((a,b) => a - b);
+      //   console.log(arr2)
+      //   let max = arr1[arr1.length-1];
+      //   let min = arr2[0];
+
+      //   // return min * max;
+      //   //code here
+      //   console.log(min)
+      // }
+      // let a = [5, 7, 9, 3, 6, 2];
+      // let b = [1, 2, 6, -1, 0, 9];
+      // find_multiplication(a, b);
+
+      // function search(arr, X) {
+      //   let findno=arr.filter(function (value,index) {
+      //     if (value==X) {
+      //       return true
+      //     }
+      //     else{
+      //       return false
+      //     }
+      //   })
+      //   let indexofno= arr.indexOf(findno[0])
+      //   console.log(indexofno)
+      //   // write your code here
+      // }
+      // let arr = [5, 10, 40, 30, 20];
+      // let n = 3;
+      // // search(arr,x)
+
+      // // f
+
+      // /
+    </script>
+  </body>
+</html>
